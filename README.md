@@ -18,10 +18,12 @@ We use comments to add notes to our code. Good comments explain the hows and
 whys, not what the code does. That should be reflected in the code itself. Use
 comments to add reminders to yourself or other developers, or also explain your
 assumptions and the reasons you’ve written code in a certain way.
-# This is a comment and it won’t get executed.
+```# This is a comment and it won’t get executed.
 # Our comments can be multiple lines.
+```
 
 Receiving Input
+
 We can receive input from the user by calling the input() function.
 ```python
 birth_year = int(input(‘Birth year: ‘))
@@ -30,20 +32,24 @@ The input() function always returns data as a string. So, we’re converting the
 result into an integer by calling the built-in int() function. 
 
 Strings
+
 We can define strings using single (‘ ‘) or double (“ “) quotes.
 To define a multi-line string, we surround our string with tripe quotes (“””).
 We can get individual characters in a string using square brackets [].
 ```
 course = ‘Python for Beginners’
-```
 course[0] # returns the first character
 course[1] # returns the second character
 course[-1] # returns the first character from the end
 course[-2] # returns the second character from the end
+```
 We can slice a string using a similar notation:
+```
 course[1:5]
+```
 The above expression returns all the characters starting from the index position of 1
 to 5 (but excluding 5). The result will be ytho
+
 If we leave out the start index, 0 will be assumed.
 If we leave out the end index, the length of the string will be assumed.
 We can use formatted strings to dynamically insert values into our strings:
@@ -53,13 +59,16 @@ message = f’Hi, my name is {name}’
 message.upper() # to convert to uppercase
 message.lower() # to convert to lowercase
 message.title() # to capitalize the first letter of every word
-message.find(‘p’) # returns the index of the first occurrence of p
- (or -1 if not found)
+message.find(‘p’) # returns the index of the first occurrence of p (or -1 if not found)
 message.replace(‘p’, ‘q’)
+```
+
 To check if a string contains a character (or a sequence of characters), we use the in
 operator:
+```
 contains = ‘Python’ in course
 ```
+
 Arithmetic Operations
 +
 -
