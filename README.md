@@ -10,11 +10,7 @@ rating = 4.9
 course_name = ‘Python for Beginners’
 is_published = True
 ```
-In the above example,
-price is an integer (a whole number without a decimal point)
-rating is a float (a number with a decimal point)
-course_name is a string (a sequence of characters)
-is_published is a boolean. Boolean values can be True or False.
+In the above example, price is an integer (a whole number without a decimal point), rating is a float (a number with a decimal point), course_name is a string (a sequence of characters), is_published is a boolean. Boolean values can be True or False.
 
 Comments
 We use comments to add notes to our code. Good comments explain the hows and
