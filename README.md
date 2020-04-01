@@ -70,59 +70,90 @@ contains = ‘Python’ in course
 ```
 
 Arithmetic Operations
+
 +
+
 -
+
 *
+
 / # returns a float
+
 // # returns an int
+
 % # returns the remainder of division
+
 ** # exponentiation - x ** y = x to the power of y
+
 Augmented assignment operator:
+
 x = x + 10
+
 x += 10
+
 Operator precedence:
+
 1. parenthesis
 2. exponentiation
 3. multiplication / division
 4. addition / subtraction 
 
 If Statements
+```
 if is_hot:
  print(“hot day”)
 elif is_cold:
  print(“cold day”)
 else:
  print(“beautiful day”)
+ ```
+ 
 Logical operators:
+```
 if has_high_income and has_good_credit:
  ...
 if has_high_income or has_good_credit:
  ...
 is_day = True
 is_night = not is_day
+```
 
 Comparison operators
+
 a > b
+
 a >= b (greater than or equal to)
+
 a < b
+
 a <= b
+
 a == b (equals)
+
 a != b (not equals)
 
 While loops
+```
 i = 1
 while i < 5:
  print(i)
  i += 1
+```
 
 For loops
+
+```
 for i in range(1, 5):
  print(i)
-• range(5): generates 0, 1, 2, 3, 4
-• range(1, 5): generates 1, 2, 3, 4
-• range(1, 5, 2): generates 1, 3
+ ```
+range(5): generates 0, 1, 2, 3, 4
+
+range(1, 5): generates 1, 2, 3, 4
+
+range(1, 5, 2): generates 1, 3
 
 Lists
+```
 numbers = [1, 2, 3, 4, 5]
 numbers[0] # returns the first item
 numbers[1] # returns the second item
@@ -137,56 +168,78 @@ numbers.index(8) # returns the index of first occurrence of 8
 numbers.sort() # sorts the list
 numbers.reverse() # reverses the list
 numbers.copy() # returns a copy of the list
+```
 
 Tuples
+
 They are like read-only lists. We use them to store a list of items. But once we
 define a tuple, we cannot add or remove items or change the existing items.
+```
 coordinates = (1, 2, 3)
+```
 We can unpack a list or a tuple into separate variables:
+```
 x, y, z = coordinates 
+```
 
 Dictionaries
+
 We use dictionaries to store key/value pairs.
+```
 customer = {
  “name”: “John Smith”,
  “age”: 30,
  “is_verified”: True
 }
+```
 We can use strings or numbers to define keys. They should be unique. We can use
 any types for the values.
+```
 customer[“name”] # returns “John Smith”
 customer[“type”] # throws an error
 customer.get(“type”, “silver”) # returns “silver”
 customer[“name”] = “new name”
+```
 
 Functions
+
 We use functions to break up our code into small chunks. These chunks are easier
 to read, understand and maintain. If there are bugs, it’s easier to find bugs in a
 small chunk than the entire program. We can also re-use these chunks.
+```
 def greet_user(name):
  print(f”Hi {name}”)
 greet_user(“John”)
+```
 Parameters are placeholders for the data we can pass to functions. Arguments
 are the actual values we pass.
+
 We have two types of arguments:
-• Positional arguments: their position (order) matters
-• Keyword arguments: position doesn’t matter - we prefix them with the parameter
+
+Positional arguments: their position (order) matters
+
+Keyword arguments: position doesn’t matter - we prefix them with the parameter
 name. 
-# Two positional arguments
+
+```# Two positional arguments
 greet_user(“John”, “Smith”)
 # Keyword arguments
 calculate_total(order=50, shipping=5, tax=0.1)
+```
 Our functions can return values. If we don’t use the return statement, by default
 None is returned. None is an object that represents the absence of a value.
+```
 def square(number):
  return number * number
 result = square(2)
 print(result) # prints 4
-
+```
 Exceptions
+
 Exceptions are errors that crash our programs. They often happen because of bad
 input or programming errors. It’s our job to anticipate and handle these exceptions
 to prevent our programs from cashing.
+```
 try:
  age = int(input(‘Age: ‘))
  income = 20000
@@ -196,21 +249,27 @@ except ValueError:
  print(‘Not a valid number’)
 except ZeroDivisionError:
  print(‘Age cannot be 0’)
+```
 
 Classes
+
 We use classes to define new types.
+```
 class Point:
  def __init__(self, x, y):
  self.x = x
  self.y = y
  def move(self):
  print(“move”) 
+```
 
 When a function is part of a class, we refer to it as a method.
 Classes define templates or blueprints for creating objects. An object is an instance
 of a class. Every time we create a new instance, that instance follows the structure
 we define using the class.
+```
 point1 = Point(10, 5)
 point2 = Point(2, 4)
+```
 __init__ is a special method called constructor. It gets called at the time of
 creating new objects. We use it to initialize our objects.
