@@ -4,10 +4,12 @@ Virtual_Keyboard_SoC_2020
 
 Variables
 We use variables to temporarily store data in computer’s memory.
+```
 price = 10
 rating = 4.9
 course_name = ‘Python for Beginners’
 is_published = True
+```
 In the above example,
 price is an integer (a whole number without a decimal point)
 rating is a float (a number with a decimal point)
