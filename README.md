@@ -18,14 +18,15 @@ We use comments to add notes to our code. Good comments explain the hows and
 whys, not what the code does. That should be reflected in the code itself. Use
 comments to add reminders to yourself or other developers, or also explain your
 assumptions and the reasons you’ve written code in a certain way.
-```# This is a comment and it won’t get executed.
+```
+# This is a comment and it won’t get executed.
 # Our comments can be multiple lines.
 ```
 
 Receiving Input
 
 We can receive input from the user by calling the input() function.
-```python
+```
 birth_year = int(input(‘Birth year: ‘))
 ```
 The input() function always returns data as a string. So, we’re converting the
@@ -89,9 +90,11 @@ Arithmetic Operations
 
 Augmented assignment operator:
 
+```
 x = x + 10
 
 x += 10
+```
 
 Operator precedence:
 
@@ -223,7 +226,8 @@ Positional arguments: their position (order) matters
 Keyword arguments: position doesn’t matter - we prefix them with the parameter
 name. 
 
-```# Two positional arguments
+```
+# Two positional arguments
 greet_user(“John”, “Smith”)
 # Keyword arguments
 calculate_total(order=50, shipping=5, tax=0.1)
