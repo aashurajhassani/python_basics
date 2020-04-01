@@ -71,7 +71,7 @@ contains = ‘Python’ in course
 
 Arithmetic Operations
 
-+
+```+
 
 -
 
@@ -84,6 +84,7 @@ Arithmetic Operations
 % # returns the remainder of division
 
 ** # exponentiation - x ** y = x to the power of y
+```
 
 Augmented assignment operator:
 
