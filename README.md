@@ -9,10 +9,10 @@ rating = 4.9
 course_name = ‘Python for Beginners’
 is_published = True
 In the above example,
-• price is an integer (a whole number without a decimal point)
-• rating is a float (a number with a decimal point)
-• course_name is a string (a sequence of characters)
-• is_published is a boolean. Boolean values can be True or False.
+price is an integer (a whole number without a decimal point)
+rating is a float (a number with a decimal point)
+course_name is a string (a sequence of characters)
+is_published is a boolean. Boolean values can be True or False.
 
 Comments
 We use comments to add notes to our code. Good comments explain the hows and
@@ -24,7 +24,9 @@ assumptions and the reasons you’ve written code in a certain way.
 
 Receiving Input
 We can receive input from the user by calling the input() function.
+```python
 birth_year = int(input(‘Birth year: ‘))
+```
 The input() function always returns data as a string. So, we’re converting the
 result into an integer by calling the built-in int() function. 
 
@@ -32,7 +34,9 @@ Strings
 We can define strings using single (‘ ‘) or double (“ “) quotes.
 To define a multi-line string, we surround our string with tripe quotes (“””).
 We can get individual characters in a string using square brackets [].
+```
 course = ‘Python for Beginners’
+```
 course[0] # returns the first character
 course[1] # returns the second character
 course[-1] # returns the first character from the end
@@ -44,6 +48,7 @@ to 5 (but excluding 5). The result will be ytho
 If we leave out the start index, 0 will be assumed.
 If we leave out the end index, the length of the string will be assumed.
 We can use formatted strings to dynamically insert values into our strings:
+```
 name = ‘Mosh’
 message = f’Hi, my name is {name}’
 message.upper() # to convert to uppercase
@@ -55,7 +60,7 @@ message.replace(‘p’, ‘q’)
 To check if a string contains a character (or a sequence of characters), we use the in
 operator:
 contains = ‘Python’ in course
-
+```
 Arithmetic Operations
 +
 -
