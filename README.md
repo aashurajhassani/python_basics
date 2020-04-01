@@ -71,7 +71,8 @@ contains = ‘Python’ in course
 
 Arithmetic Operations
 
-```+
+```
++
 
 -
 
